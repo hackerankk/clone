@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+     :root {
+        --primary-color: #0056d2;
+        --grid-content-color: #5b6780;
+        --grid-border-color: rgb(74 168 255 / 18%);
+      }
+      .margin_common {
+        margin: 2rem 4rem;
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      a {
+        text-decoration: none;
+      }
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2rem 3rem;
+      }
+      .leftnav {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+      .button_common {
+        height: 35px;
+        width: 7rem;
+        background-color: white;
+        border: 1px solid #0aa4ff;
+        font-size: 18px;
+        font-weight: bold;
+        color: var(--primary-color);
+        border-radius: 4px;
+      }
+      .search_nav {
+        border: 1px solid #00000026;
+        width: 23rem;
+        height: 47px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 8px;
+        border-radius: 33px;
+      }
+      .course_head {
+        font-size: 1.7rem;
+        color: var(--primary-color);
+      }
+      .search input {
+        border: none;
+        outline: none;
+      }
+      .search_icon {
+        display: flex;
+        border: 1px solid;
+        height: 2.5rem;
+        width: 2.5rem;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--primary-color);
+        color: white;
+        border-radius: 27px;
+      }
+      .nav_anc a {
+        color: gray;
+      }
+      .login a {
+        color: var(--primary-color);
+      }
+      /*nav var end */
+      .firstpage {
+        width: 34rem;
+        height: 25rem;
+      }
+      .lear_h1 {
+        font-size: 2.5rem;
+      }
+      .firstpage p {
+        font-size: 24px;
+        color: gray;
+        margin-top: 2rem;
+      }
+      .lowerbut {
+        display: flex;
+        margin-top: 3rem;
+        gap: 1rem;
+      }
+      .button2 {
+        height: 4rem;
+        width: 14rem;
+        color: white;
+        background-color: var(--primary-color);
+        font-size: 21px;
+        border: none;
+        border-radius: 4px;
+      }
+      .button_common1 {
+        height: 4rem;
+        border: 3px solid var(--primary-color);
+        width: 21rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .image_content {
+        display: flex;
+        justify-content: space-between;
+      }
+      /*second page start */
+      .second {
+        background: #7e7c7c1c;
+        height: 18rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 6rem;
+        align-items: center;
+      }
+      .collab0 a {
+        display: flex;
+        justify-content: center;
+        color: black;
+        font-size: 36px;
+        font-weight: bold;
+      }
+      .collab {
+        color: var(--primary-color);
+      }
+      .collabe_icon {
+        display: flex;
+        gap: 3rem;
+      }
+      .displayflexcommon {
+        display: flex; /*common display flex mande when alling two div in center*/
+        align-items: center;
+      }
+      .third_page_heading {
+        font-size: 21px;
+        gap: 1rem;
+      }
+      .third_page_heading a {
+        color: grey;
+      }
+      .nav2 a {
+        color: gray;
+        font-size: 18px;
+      }
+      .nav2 {
+        display: flex;
+        gap: 2rem;
+        margin: 2rem;
+      }
+      .project_manger {
+        border: 2px solid rgb(74 168 255 / 18%);
+      }
+      .occupation {
+        color: gray;
+        margin: 1rem 0;
+        gap: 1rem;
+        font-size: 19px;
+      }
+      .allcoup {
+        width: 34rem;
+        height: 2rem;
+        background: #c3f4f966;
+        /* display: flex; */
+        align-items: center;
+      }
+      .projcet_mange {
+        background-color: #4a317a;
+        color: white;
+        width: 63rem;
+        height: 2rem;
+      }
+      .job_open {
+        color: gray;
+        line-height: 2rem;
+      }
+      .dollar_black {
+        color: black;
+      }
+      .grid_first {
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .grid1 {
+        box-shadow: 1px 1px 6px rgba(0, 0, 0, 1.2);
+        width: 19.5rem;
+        height: 23.9rem;
+        border-radius: 7px;
+      }
+      .grid_image img {
+        width: 100%;
+      }
+      .content_card {
+        padding-left: 1rem;
+      }
+      .card_tag {
+        display: flex;
+        gap: 1rem;
+        color: var(--grid-content-color);
+      }
+      .bottom_content {
+        margin-top: 1rem;
+        color: var(--grid-content-color);
+      }
+      .explore_arrow a {
+        text-align: center;
+        font-size: 27px;
+        color: black;
+      }
+      .customer_review {
+        color: var(--grid-content-color);
+        gap: 1rem;
+        padding-top: 3rem;
+        line-height: 29px;
+      }
+      .adernine_img img {
+        height: 4rem;
+      }
+      /*third page start*/
+      .pro_cert {
+        font-size: 23px;
+        line-height: 3.5rem;
+      }
+      .pro_cert h3 {
+        color: #560fa5;
+        padding: 16px 0px;
+      }
+      .grid_second {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .grid2 {
+        border: 2px solid var(--grid-border-color);
+        width: 18.5rem;
+        height: 21rem;
+        border-radius: 5px;
+      }
+      .grid2_image {
+        display: flex;
+        justify-content: center;
+        padding: 12px 0px;
+        border-radius: 32px;
+      }
+      .grid2_image img {
+        border-radius: 10px;
+        width: 90%;
+      }
+      .grid2_cont {
+        padding-left: 11px;
+      }
+      .medal {
+        display: flex;
+        align-items: center;
+        color: var(--primary-color);
+        gap: 8px;
+        padding-top: 2rem;
+      }
+      .medal_des {
+        width: 3rem;
+        border: 2px solid var(--primary-color);
+      }
+      .show_button {
+        height: 3rem;
+        width: 7rem;
+        font-size: 14px;
+      }
+
+      /*fifth page start*/
+      .background {
+        display: flex;
+        background-image: url(photo/background\ image1.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        height: 30rem;
+        background-color: #94c2e969;
+        padding: 1rem;
+      }
+      .genai {
+        border: 2px solid #5f9ea000;
+        width: 20rem;
+        font-size: 19px;
+      }
+      .genai p {
+        padding: 1rem 0;
+        font-size: 17px;
+      }
+      .nav3 {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+      .nav3 a {
+        border: 2px solid rgba(128, 128, 128, 0.651);
+        background-color: white;
+        color: black;
+        border-radius: 25px;
+        display: flex;
+        width: 5rem;
+        height: 2rem;
+        align-items: center;
+        justify-content: center;
+      }
+      .gen_grid {
+        display: grid;
+        grid-template-columns: repeat(3, 19rem);
+      }
+      .grid3 {
+        border-radius: 7px;
+        width: 18rem;
+        background-color: white;
+        height: 22rem;
+        margin-top: 2rem;
+      }
+      .grid3_image {
+        display: flex;
+        justify-content: center;
+        padding: 9px 0;
+      }
+      .grid3_image img {
+        border-radius: 10px;
+      }
+      .tag img {
+        width: 29px;
+        height: 19px;
+      }
+      /* 6 page start*/
+      .cloud_image img {
+        height: 12.6rem;
+      }
+      .cloud_icon img {
+        width: 29px;
+      }
+      /* 8 page start*/
+      .gradute_tag {
+        border: none;
+        width: 1rem;
+      }
+      .grid_height {
+        height: 23rem;
+      }
+      .medal_height {
+        padding-top: 1rem;
+      }
+      .bottom_content_margin {
+        margin-top: 3px;
+      }
+      /*10 page start*/
+      .course_grid{
+        display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+      }
+      .grid4 {
+        display: flex;
+        width: 24rem;
+        box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+      }
+      .grid4_img {
+        width: 4rem;
+        height: 4rem;
+      }
+      .grid4_img img {
+        width: 100%;
+        height: 100%;
+      }
+      .grid4_cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 12px;
+        font-size: 20px;
+      }
+      .grid4_cont h6 {
+        color: gray;
+      }
+     /* 11 page start*/
+     .learner_outcomes{
+      background-color: #b4dee7a3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 48rem;
+    margin-top: 11rem;
+     }
+     .learner_img img{
+          /* display: flex; */
+    /* justify-content: center; */
+    transform: translate(10px, -77px);
+    height: 31rem;
+     }
+     .learner_cont{
+      font-size: 27px;
+    /* width: 43rem; */
+    /* border: 2px solid; */
+     }
+     .learner_cont p{
+      width: 35rem;
+    /* border: 2px solid; */
+    text-align: left;
+    color: gray;
+     }
+     .learner_bold{
+      color:black;
+     }
+     .learning_anch a{
+      color:blue;
+      text-decoration: underline;
+     }
+     .button3{
+      justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 9rem;
+    height: 3rem;
+    font-size: 19px;
+    margin-top: 3rem;
+     }
+     /*page 12 start*/
+     .coursera_community{
+      text-align: center;
+      font-size: 22px;
+      margin-top: 5rem;
+     }
+     .coursera_community p{
+      margin:1rem;
+     }
+     .community_grid{
+      display: grid;
+    padding-top: 56px;
+    margin: 0 11rem;
+    grid-template-columns: repeat(3,1fr);
+     }
+     .community1{
+      width: 16rem;
+     }
+     .community_content{
+      line-height: 26px;
+     }
+     .community_content h3{
+      font-size: 28px;
+      color: var(--primary-color);
+     }
+     .underline{
+      display: inline-block;
+      background-color:var(--primary-color);
+      width: 78px;
+      height: 3px;
+      margin-bottom: 7px;
+    
+     }
+     .community_botoom{
+      font-size: 20px;
+      color: var(--grid-content-color);
+     }
+     
+    </style>
+    <title>course era clone</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="leftnav">
+        <span class="course_head">
+          <a href="coursera"><h2>coursera</h2></a></span
+        >
+        <span class="button">
+          <button class="button_common">explore</button>
+        </span>
+        <div class="search_nav">
+          <span class="search">
+            <input type="text" placeholder="what do you want to learm?"
+          /></span>
+          <span class="search_icon"><i class="ri-search-line"></i></span>
+        </div>
+      </div>
+      <div class="leftnav">
+        <span class="nav_anc"> <a href="degree"> degress</a></span>
+        <span class="nav_anc"> <a href="degree"> find careers</a></span>
+        <span class="login"> <a href="degree"> Log In</a></span>
+        <span class="button">
+          <button class="button_common">join for free</button>
+        </span>
+      </div>
+    </div>
+    <!--nav bar end-->
+    <div class="image_content margin_common">
+      <div class="firstpage">
+        <span class="lear_h1"><h1>Learn without limits</h1></span>
+        <p>
+          Start, switch, or advance your career with more than 7,000 courses,
+          Professional Certificates, and degrees from world-class universities
+          and companies.
+        </p>
+        <div class="lowerbut">
+          <button class="button2">join for free</button>
+          <div class="button_common button_common1">
+            try course for business
+          </div>
+        </div>
+      </div>
+      <div class="image">
+        <img src="photo/first page 1.png" alt="error" />
+      </div>
+    </div>
+
+    <!--seond page start-->
+    <div class="second">
+      <span class="collab0"
+        ><a href=""
+          >We collaborate with
+          <span class="collab"
+            >325+ leading universities and companies
+          </span></a
+        ></span
+      >
+      <div class="collabe_icon">
+        <span class="collab_imag"
+          ><a href="##"><img src="photo/collab icon1.png" alt="error" /></a
+        ></span>
+        <span class="collab_imag"
+          ><a href="##"><img src="photo/collab icon2.png" alt="error" /></a
+        ></span>
+        <span class="collab_imag"
+          ><a href="##"><img src="photo/collab icon3png.png" alt="error" /></a
+        ></span>
+        <span class="collab_imag"
+          ><a href="##"><img src="photo/collab icon4png.png" alt="error" /></a
+        ></span>
+        <span class="collab_imag"
+          ><a href="##"><img src="photo/collab icon5.png" alt="error" /></a
+        ></span>
+        <span class="collab_imag"
+          ><a href="##"><img src="photo/collab icon6.png" alt="error" /></a
+        ></span>
+        <span class="collab_imag"
+          ><a href="##"><img src="photo/collab icon7.png" alt="error" /></a
+        ></span>
+        <span class="collab_imag"
+          ><a href="##"><img src="photo/collab icon8.png" alt="error" /></a
+        ></span>
+      </div>
+    </div>
+    <!-- third page start-->
+    <div class="third margin_common">
+      <div class="third_page_heading displayflexcommon">
+        <h2>Launch a new career in as little as 6 months</h2>
+        <a href=""
+          >view all roles <span><i class="ri-arrow-right-line"></i></span
+        ></a>
+      </div>
+      <div class="nav2">
+        <a href="##">Project Mangager</a>
+        <a href="##">data anylst</a>
+        <a href="##">digital marketer</a>
+        <a href="##">it support specialist</a>
+        <a href="##">business anylst</a>
+        <a href="##">cybersecurity</a>
+        <a href="##">fornt-end developer</a>
+        <a href="##">ux designer</a>
+      </div>
+      <div class="project_manger">
+        <div class="margin_common">
+          <span class="project_head"><h1>project Mangager</h1></span>
+          <span class="para_gray"
+            ><p>
+              Oversee the planning and execution of projects to ensure they’re
+              successful
+            </p></span
+          >
+          <span class="heading_common"><h3>median salary</h3></span>
+          <div class="occupation displayflexcommon">
+            <div class="allcoup displayflexcommon">
+              <p>all occupation</p>
+            </div>
+            <div class="dollar">
+              <p>$37,960*</p>
+            </div>
+          </div>
+          <div class="occupation displayflexcommon">
+            <div class="projcet_mange displayflexcommon">
+              <p>project manger</p>
+            </div>
+            <div class="dollar">
+              <p>$102,800**</p>
+            </div>
+            <hr />
+          </div>
+          <div class="job_open">
+            <p>Job openings: <span class="dollar_black">336,402**</span></p>
+            <p>
+              Projected 10 year growth:
+              <span class="dollar_black">+11.1%***</span>
+            </p>
+          </div>
+          <div class="head_grid">
+            <div class="heading_common">
+              <h3>Recommended Professional Certificates</h3>
+            </div>
+            <div class="grid_first">
+              <div class="grid1">
+                <div class="grid_image">
+                  <img src="photo/google grid1.jpeg" alt="404" />
+                </div>
+                <div class="content_card">
+                  <div class="card_tag">
+                    <div class="tag">
+                      <img src="photo/micosoft logo.jpeg" alt="404" />
+                    </div>
+                    <div class="card_tag_name">
+                      <p>microsoft</p>
+                    </div>
+                  </div>
+                  <div class="heading_common">
+                    <h3>micosoft project management</h3>
+                  </div>
+                  <div class="bottom_content">
+                    <span class="bottom_content1"
+                      ><p>
+                        <span class="rating">4.6 </span
+                        ><span class="star"><i class="ri-star-fill"></i></span
+                        >(84 reviews)
+                      </p></span
+                    >
+                    <span class="bottom_content1"
+                      >beginner Professional Certificate 4 months</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="grid1">
+                <div class="grid_image">
+                  <img src="photo/google grid 2.jpeg" alt="404" />
+                </div>
+                <div class="content_card">
+                  <div class="card_tag">
+                    <div class="tag">
+                      <img src="photo/google logo.jpeg" alt="404" />
+                    </div>
+                    <div class="card_tag_name">
+                      <p>microsoft</p>
+                    </div>
+                  </div>
+                  <div class="heading_common">
+                    <h3>micosoft project management</h3>
+                  </div>
+                  <div class="bottom_content">
+                    <span class="bottom_content1"
+                      ><p>
+                        <span class="rating">4.6 </span
+                        ><span class="star"><i class="ri-star-fill"></i></span
+                        >(84 reviews)
+                      </p></span
+                    >
+                    <span class="bottom_content1"
+                      >beginner Professional Certificate 4 months</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="explore_arrow">
+              <a href="##">
+                <p>
+                  explore all certificates
+                  <i class="ri-arrow-right-line"></i></p
+              ></a>
+            </div>
+          </div>
+          <div class="customer_review displayflexcommon">
+            <div class="adernine_img">
+              <img src="photo/adrienne.jpg" alt="404" />
+            </div>
+            <div class="review">
+              <p>
+                "Earning my Google Project Management: Professional Certificate
+                is one of the biggest accomplishments I’ve made in my education,
+                and it was a key stepping stone to my new career."
+              </p>
+              <p>– Adrienne</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--four page start-->
+    <div class="four margin_common">
+      <div class="pro_cert">
+        <h3>Specializations and Professional Certificates</h3>
+        <h1>Most Popular Certificates</h1>
+        <p>
+          Explore our most popular programs, get job-ready for an in-demand
+          career.
+        </p>
+      </div>
+      <div class="grid_second">
+        <div class="grid2">
+          <div class="grid2_image">
+            <img src="photo/certificate1.jpeg" alt="404" />
+          </div>
+          <div class="grid2_cont">
+            <div class="card_tag">
+              <div class="logo">
+                <img src="photo/google logo.jpeg" alt="" />
+              </div>
+              <div class="card_tag_name">google</div>
+            </div>
+            <div class="grid2_post">
+              <h3>google ux design</h3>
+            </div>
+            <div class="medal">
+              <span class="medal_des"><i class="ri-award-line"></i></span>
+              <span class="medal_text"
+                ><p>Make progress toward a degree</p></span
+              >
+            </div>
+            <div class="bottom_content">
+              <p>professional Certificate</p>
+            </div>
+          </div>
+        </div>
+        <!--second grid image adeed-->
+        <div class="grid2">
+          <div class="grid2_image">
+            <img src="photo/certificate2.jpeg" alt="404" />
+          </div>
+          <div class="grid2_cont">
+            <div class="card_tag">
+              <div class="logo">
+                <img src="photo/google logo.jpeg" alt="" />
+              </div>
+              <div class="card_tag_name">google</div>
+            </div>
+            <div class="grid2_post">
+              <h3>google ux design</h3>
+            </div>
+            <div class="medal">
+              <span class="medal_des"><i class="ri-award-line"></i></span>
+              <span class="medal_text"
+                ><p>Make progress toward a degree</p></span
+              >
+            </div>
+            <div class="bottom_content">
+              <p>professional Certificate</p>
+            </div>
+          </div>
+        </div>
+        <!--grid 3 image added-->
+        <div class="grid2">
+          <div class="grid2_image">
+            <img src="photo/certificate3.jpeg" alt="404" />
+          </div>
+          <div class="grid2_cont">
+            <div class="card_tag">
+              <div class="logo">
+                <img src="photo/google logo.jpeg" alt="" />
+              </div>
+              <div class="card_tag_name">google</div>
+            </div>
+            <div class="grid2_post">
+              <h3>google ux design</h3>
+            </div>
+            <div class="medal">
+              <span class="medal_des"><i class="ri-award-line"></i></span>
+              <span class="medal_text"
+                ><p>Make progress toward a degree</p></span
+              >
+            </div>
+            <div class="bottom_content">
+              <p>professional Certificate</p>
+            </div>
+          </div>
+        </div>
+        <!--grid 4image added-->
+        <div class="grid2">
+          <div class="grid2_image">
+            <img src="photo/certificate4.jpeg" alt="404" />
+          </div>
+          <div class="grid2_cont">
+            <div class="card_tag">
+              <div class="logo">
+                <img src="photo/google logo.jpeg" alt="" />
+              </div>
+              <div class="card_tag_name">google</div>
+            </div>
+            <div class="grid2_post">
+              <h3>google ux design</h3>
+            </div>
+            <div class="medal">
+              <span class="medal_des"><i class="ri-award-line"></i></span>
+              <span class="medal_text"
+                ><p>Make progress toward a degree</p></span
+              >
+            </div>
+            <div class="bottom_content">
+              <p>professional Certificate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lowerbut">
+        <button class="button2 show_button">show 8 more</button>
+        <div class="button_common button_common1 show_button">
+          view all <i class="ri-arrow-right-line"></i>
+        </div>
+      </div>
+    </div>
+    <!--five page start-->
+    <div class="background margin_common">
+      <div class="genai">
+        <h1>get started with genai</h1>
+        <p>
+          Identify, develop and execute impactful GenAI business strategies.
+        </p>
+        <button class="button2 show_button">view all genAi</button>
+      </div>
+      <div class="rightaicont">
+        <div class="nav3">
+          <a href="sfd">beginner</a>
+          <a href="##">popular</a>
+          <a href="##">new</a>
+          <a href="##">tools</a>
+        </div>
+        <div class="gen_grid">
+          <div class="grid3">
+            <div class="grid2_image">
+              <img src="photo/gen ai 1.jpg" alt="404" />
+            </div>
+            <div class="grid2_cont">
+              <div class="card_tag">
+                <div class="tag">
+                  <img src="photo/ibm icon.png" alt="404" />
+                </div>
+                <div class="card_tag_name">
+                  <p>ibm</p>
+                </div>
+              </div>
+              <div class="grid2_post">
+                <h3>generative ai fundamentals</h3>
+              </div>
+              <div class="bottom_content">
+                <p>Specialization</p>
+              </div>
+            </div>
+          </div>
+          <!--grid second image-->
+          <div class="grid3">
+            <div class="grid2_image">
+              <img src="photo/gen ai 2.jpeg" alt="404" />
+            </div>
+            <div class="grid2_cont">
+              <div class="card_tag">
+                <div class="tag">
+                  <img src="photo/deep learning icon.png" alt="404" />
+                </div>
+                <div class="card_tag_name">
+                  <p>deep learing ai</p>
+                </div>
+              </div>
+              <div class="grid2_post">
+                <h3>Ai for good</h3>
+              </div>
+              <div class="bottom_content">
+                <p>Specialization</p>
+              </div>
+            </div>
+          </div>
+          <!--grid third card-->
+          <div class="grid3">
+            <div class="grid2_image">
+              <img src="photo/gen ai 3.jpeg" alt="404" />
+            </div>
+            <div class="grid2_cont">
+              <div class="card_tag">
+                <div class="tag">
+                  <img src="photo/coursera icon.jpeg" alt="404" />
+                </div>
+                <div class="card_tag_name">
+                  <p>coursera</p>
+                </div>
+              </div>
+              <div class="grid2_post">
+                <h3>navigating the generative ai for leader</h3>
+              </div>
+              <div class="bottom_content">
+                <p>Specialization</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--6 page start-->
+    <div class="five margin_common">
+      <div class="pro_cert">
+        <h3>Courses and Professional Certificates</h3>
+        <h1>New on Coursera</h1>
+        <p>
+          Explore our newest programs, focused on delivering in-demand skills.
+        </p>
+      </div>
+      <div class="grid_second">
+        <div class="grid2">
+          <div class="grid2_image">
+            <img src="photo/page 5 image1.jpeg" alt="404" />
+          </div>
+          <div class="grid2_cont">
+            <div class="card_tag">
+              <div class="logo">
+                <img src="photo/micosoft logo.jpeg" alt="" />
+              </div>
+              <div class="card_tag_name">micosoft</div>
+            </div>
+            <div class="grid2_post">
+              <h3>microsoft ux design</h3>
+            </div>
+            <div class="bottom_content">
+              <p>professional Certificate</p>
+            </div>
+          </div>
+        </div>
+        <!--second grid image adeed-->
+        <div class="grid2">
+          <div class="grid2_image cloud_image">
+            <img src="photo/page 5 image2 .jpeg" alt="404" />
+          </div>
+          <div class="grid2_cont">
+            <div class="card_tag">
+              <div class="logo cloud_icon">
+                <img src="photo/google cloud icon.png" alt="" />
+              </div>
+              <div class="card_tag_name">google cloud</div>
+            </div>
+            <div class="grid2_post">
+              <h3>google cloud data analytics</h3>
+            </div>
+            <div class="bottom_content">
+              <p>professional Certificate</p>
+            </div>
+          </div>
+        </div>
+        <!--grid 3 image added-->
+        <div class="grid2">
+          <div class="grid2_image">
+            <img src="photo/page 5 image3.jpeg" alt="404" />
+          </div>
+          <div class="grid2_cont">
+            <div class="card_tag">
+              <div class="logo">
+                <img src="photo/micosoft logo.jpeg" alt="" />
+              </div>
+              <div class="card_tag_name">micosoft</div>
+            </div>
+            <div class="grid2_post">
+              <h3>microsoft project management</h3>
+            </div>
+            <div class="bottom_content">
+              <p>professional Certificate</p>
+            </div>
+          </div>
+        </div>
+        <!--grid 4image added-->
+        <div class="grid2">
+          <div class="grid2_image cloud_image">
+            <img src="photo/page 5 image2 .jpeg" alt="404" />
+          </div>
+          <div class="grid2_cont">
+            <div class="card_tag">
+              <div class="logo cloud_icon">
+                <img src="photo/google cloud icon.png" alt="" />
+              </div>
+              <div class="card_tag_name">google cloud</div>
+            </div>
+            <div class="grid2_post">
+              <h3>google cloud cybersecurity</h3>
+            </div>
+            <div class="bottom_content">
+              <p>professional Certificate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lowerbut">
+        <button class="button2 show_button">show 8 more</button>
+        <div class="button_common button_common1 show_button">
+          view all <i class="ri-arrow-right-line"></i>
+        </div>
+      </div>
+    </div>
+    <!-- 7 page start-->
+    <div class="six margin_common">
+      <div class="pro_cert">
+        <h3>100% free</h3>
+        <h1>Start learning with free courses</h1>
+        <p>
+          Explore free online courses from the world's top universities and
+          companies.
+        </p>
+      </div>
+      <div class="grid_second">
+        <div class="grid2">
+          <div class="grid2_image">
+            <img src="photo/page 7 image1.jpeg" alt="404" />
+          </div>
+          <div class="grid2_cont">
+            <div class="card_tag displayflexcommon">
+              <div class="logo cloud_icon">
+                <img src="photo/jhonson logo.png" alt="" />
+              </div>
+              <div class="card_tag_name">jhons hopkis university</div>
+            </div>
+            <div class="grid2_post">
+              <h4>business analytics with excel: elementary to advanced</h4>
+            </div>
+            <div class="bottom_content">
+              <p>course</p>
+            </div>
+          </div>
+        </div>
+        <!--second grid image adeed-->
+        <div class="grid2">
+          <div class="grid2_image">
+            <img src="photo/page 7 image2.jpeg" alt="404" />
+          </div>
+          <div class="grid2_cont">
+            <div class="card_tag">
+              <div class="logo cloud_icon">
+                <img src="photo/standford icon.png" alt="" />
+              </div>
+              <div class="card_tag_name">stanford university</div>
+            </div>
+            <div class="grid2_post">
+              <h3>introduction to statistics</h3>
+            </div>
+            <div class="bottom_content">
+              <p>course</p>
+            </div>
+          </div>
+        </div>
+        <!--grid 3 image added-->
+        <div class="grid2">
+          <div class="grid2_image cloud_image">
+            <img src="photo/page 5 image2 .jpeg" alt="404" />
+          </div>
+          <div class="grid2_cont">
+            <div class="card_tag">
+              <div class="logo cloud_icon">
+                <img src="photo/google cloud icon.png" alt="" />
+              </div>
+              <div class="card_tag_name">google cloud</div>
+            </div>
+            <div class="grid2_post">
+              <h3>introduction to generative ai</h3>
+            </div>
+            <div class="bottom_content">
+              <p>course</p>
+            </div>
+          </div>
+        </div>
+        <!--grid 4image added-->
+        <div class="grid2">
+          <div class="grid2_image">
+            <img src="photo/page 7 image3.jpg" alt="404" />
+          </div>
+          <div class="grid2_cont">
+            <div class="card_tag displayflexcommon">
+              <div class="logo cloud_icon">
+                <img src="photo/udavis icone.png" alt="" />
+              </div>
+              <div class="card_tag_name">universityof california,davis</div>
+            </div>
+            <div class="grid2_post">
+              <h3>the strategy of content marketing</h3>
+            </div>
+            <div class="bottom_content">
+              <p>course</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lowerbut">
+        <button class="button2 show_button">show 8 more</button>
+        <div class="button_common button_common1 show_button">
+          view all <i class="ri-arrow-right-line"></i>
+        </div>
+      </div>
+    </div>
+    <!-- 8 page start-->
+    <div class="six margin_common">
+      <div class="pro_cert">
+        <h3>Degree programs</h3>
+        <h1>find a top degree that fits your life</h1>
+        <p>
+          breakthorugh pricing on 100% online degress for mtop universities.
+        </p>
+      </div>
+      <div class="grid_second">
+        <div class="grid2 grid_height">
+          <div class="grid2_image">
+            <img src="photo/page 8 image1.jpg" alt="404" />
+          </div>
+          <div class="grid2_cont">
+            <div class="card_tag displayflexcommon">
+              <div class="logo cloud_icon">
+                <img src="photo/illinous icon.png" alt="" />
+              </div>
+              <div class="card_tag_name">University of Illinois Urbana....</div>
+            </div>
+            <div class="grid2_post">
+              <h4>Master of Business Administration (iMBA)</h4>
+            </div>
+            <div class="medal medal_height">
+              <span class="medal_des gradute_tag"
+                ><i class="ri-graduation-cap-line"></i
+              ></span>
+              <span class="medal_text"><p>earn a degree</p></span>
+            </div>
+            <div class="bottom_content bottom_content_margin">
+              <p>degree</p>
+            </div>
+          </div>
+        </div>
+        <!--second grid image adeed-->
+        <div class="grid2 grid_height">
+          <div class="grid2_image">
+            <img src="photo/page 8 image2.jpg" alt="404" />
+          </div>
+          <div class="grid2_cont">
+            <div class="card_tag">
+              <div class="logo cloud_icon">
+                <img src="photo/universtiy colorad icon.png" alt="" />
+              </div>
+              <div class="card_tag_name">university of colorado boulder</div>
+            </div>
+            <div class="grid2_post">
+              <h4>Master of Science in Electrical Engineering</h4>
+            </div>
+            <div class="medal medal_height">
+              <span class="medal_des gradute_tag"
+                ><i class="ri-graduation-cap-line"></i
+              ></span>
+              <span class="medal_text"><p>earn a degree</p></span>
+            </div>
+            <div class="bottom_content bottom_content_margin">
+              <p>degree</p>
+            </div>
+          </div>
+        </div>
+        <!--grid 3 image added-->
+        <div class="grid2 grid_height">
+          <div class="grid2_image">
+            <img src="photo/page 8 image3.jpg" alt="404" />
+          </div>
+          <div class="grid2_cont">
+            <div class="card_tag">
+              <div class="logo cloud_icon">
+                <img src="photo/universtiy colorad icon.png" alt="" />
+              </div>
+              <div class="card_tag_name">university of colorado boulder</div>
+            </div>
+            <div class="grid2_post">
+              <h4>Master of Engineering in Engineering management</h4>
+            </div>
+            <div class="medal medal_height">
+              <span class="medal_des gradute_tag"
+                ><i class="ri-graduation-cap-line"></i
+              ></span>
+              <span class="medal_text"><p>earn a degree</p></span>
+            </div>
+            <div class="bottom_content bottom_content_margin">
+              <p>degree</p>
+            </div>
+          </div>
+        </div>
+        <!--grid 4image added-->
+        <div class="grid2 grid_height">
+          <div class="grid2_image">
+            <img src="photo/page 8 image2.jpg" alt="404" />
+          </div>
+          <div class="grid2_cont">
+            <div class="card_tag">
+              <div class="logo cloud_icon">
+                <img src="photo/universtiy colorad icon.png" alt="" />
+              </div>
+              <div class="card_tag_name">university of colorado boulder</div>
+            </div>
+            <div class="grid2_post">
+              <h4>Master of Science in data Science</h4>
+            </div>
+            <div class="medal medal_height">
+              <span class="medal_des gradute_tag"
+                ><i class="ri-graduation-cap-line"></i
+              ></span>
+              <span class="medal_text"><p>earn a degree</p></span>
+            </div>
+            <div class="bottom_content bottom_content_margin">
+              <p>degree</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lowerbut">
+        <button class="button2 show_button">show 8 more</button>
+        <div class="button_common button_common1 show_button">
+          view all <i class="ri-arrow-right-line"></i>
+        </div>
+      </div>
+    </div>
+    <!--9 page start-->
+    <div class="six margin_common">
+      <div class="pro_cert">
+        <h3>Degree programs</h3>
+        <h1>find a top degree that fits your life</h1>
+        <p>
+          breakthorugh pricing on 100% online degress for mtop universities.
+        </p>
+      </div>
+      <div class="grid_second">
+        <div class="grid2 grid_height">
+          <div class="grid2_image">
+            <img src="photo/page 8 image1.jpg" alt="404" />
+          </div>
+          <div class="grid2_cont">
+            <div class="card_tag displayflexcommon">
+              <div class="logo cloud_icon">
+                <img src="photo/illinous icon.png" alt="" />
+              </div>
+              <div class="card_tag_name">University of Illinois Urbana....</div>
+            </div>
+            <div class="grid2_post">
+              <h4>Master of Business Administration (iMBA)</h4>
+            </div>
+            <div class="medal medal_height">
+              <span class="medal_des gradute_tag"
+                ><i class="ri-graduation-cap-line"></i
+              ></span>
+              <span class="medal_text"><p>earn a degree</p></span>
+            </div>
+            <div class="bottom_content bottom_content_margin">
+              <p>degree</p>
+            </div>
+          </div>
+        </div>
+        <!--second grid image adeed-->
+        <div class="grid2 grid_height">
+          <div class="grid2_image">
+            <img src="photo/page 9 image1.jpg" alt="404" />
+          </div>
+          <div class="grid2_cont">
+            <div class="card_tag">
+              <div class="logo cloud_icon">
+                <img src="photo/indian statical icon.png" alt="" />
+              </div>
+              <div class="card_tag_name">Indian Statistical Institute</div>
+            </div>
+            <div class="grid2_post">
+              <h4>Postgraduate Diploma in Applied Statistics</h4>
+            </div>
+            <div class="medal medal_height">
+              <span class="medal_des gradute_tag"
+                ><i class="ri-graduation-cap-line"></i
+              ></span>
+              <span class="medal_text"><p>earn a degree</p></span>
+            </div>
+            <div class="bottom_content bottom_content_margin">
+              <p>degree</p>
+            </div>
+          </div>
+        </div>
+        <!--grid 3 image added-->
+        <div class="grid2 grid_height">
+          <div class="grid2_image">
+            <img src="photo/page 9 image2.jpg" alt="404" />
+          </div>
+          <div class="grid2_cont">
+            <div class="card_tag">
+              <div class="logo cloud_icon">
+                <img src="photo/birla icon.png" alt="" />
+              </div>
+              <div class="card_tag_name">
+                birla Institute of technology &...
+              </div>
+            </div>
+            <div class="grid2_post">
+              <h4>Bachelor of science in computer science</h4>
+            </div>
+            <div class="medal medal_height">
+              <span class="medal_des gradute_tag"
+                ><i class="ri-graduation-cap-line"></i
+              ></span>
+              <span class="medal_text"><p>earn a degree</p></span>
+            </div>
+            <div class="bottom_content bottom_content_margin">
+              <p>degree</p>
+            </div>
+          </div>
+        </div>
+        <!--grid 4image added-->
+        <div class="grid2 grid_height">
+          <div class="grid2_image">
+            <img src="photo/page 9 image3.jpg" alt="404" />
+          </div>
+          <div class="grid2_cont">
+            <div class="card_tag">
+              <div class="logo cloud_icon">
+                <img src="photo/university of london icon.png" alt="" />
+              </div>
+              <div class="card_tag_name">university of london</div>
+            </div>
+            <div class="grid2_post">
+              <h4>Bachelor of Science in computer Science</h4>
+            </div>
+            <div class="medal medal_height">
+              <span class="medal_des gradute_tag"
+                ><i class="ri-graduation-cap-line"></i
+              ></span>
+              <span class="medal_text"><p>earn a degree</p></span>
+            </div>
+            <div class="bottom_content bottom_content_margin">
+              <p>degree</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lowerbut">
+        <button class="button2 show_button">show 8 more</button>
+        <div class="button_common button_common1 show_button">
+          view all <i class="ri-arrow-right-line"></i>
+        </div>
+      </div>
+    </div>
+    <!--10 page start-->
+    <div class="explor_course margin_common">
+      <div class="pro_cert">
+        <h1>explore coursera</h1>
+      </div>
+      <div class="course_grid">
+        <div class="grid4">
+          <div class="grid4_img">
+            <img src="photo/coursera course img1.jpeg" alt="" />
+          </div>
+          <div class="grid4_cont">
+            <h5>data science</h5>
+            <h6>425 courses</h6>
+          </div>
+        </div>
+        <!--grid 2-->
+      <div class="grid4">
+        <div class="grid4_img">
+          <img src="photo/coursera course img2.jpeg" alt="" />
+        </div>
+        <div class="grid4_cont">
+          <h5>business</h5>
+          <h6>1095 courses</h6>
+        </div>
+      </div>
+      <!--grid 3-->
+      <div class="grid4">
+        <div class="grid4_img">
+          <img src="photo/coursera course img3.jpeg" alt="" />
+        </div>
+        <div class="grid4_cont">
+          <h5>computer science</h5>
+          <h6>668 courses</h6>
+        </div>
+      </div>
+      <!--grid 4-->
+      <div class="grid4">
+        <div class="grid4_img">
+          <img src="photo/coursera course img4.jpeg" alt="" />
+        </div>
+        <div class="grid4_cont">
+          <h5>health</h5>
+          <h6>471 courses</h6>
+        </div>
+      </div>
+      <!--grid 5-->
+      <div class="grid4">
+        <div class="grid4_img">
+          <img src="photo/coursera course img5.jpeg" alt="" />
+        </div>
+        <div class="grid4_cont">
+          <h5>social science</h5>
+          <h6>401 courses</h6>
+        </div>
+      </div>
+      <!--grid 6-->
+      <div class="grid4">
+        <div class="grid4_img">
+          <img src="photo/coursera course img6.jpeg" alt="" />
+        </div>
+        <div class="grid4_cont">
+          <h5>Personal development</h5>
+          <h6>137 courses</h6>
+        </div>
+      </div>
+      <!--grid 7-->
+      <div class="grid4">
+        <div class="grid4_img">
+          <img src="photo/coursera course img7.jpeg" alt="" />
+        </div>
+        <div class="grid4_cont">
+          <h5>arts and humanities</h5>
+          <h6>338 courses</h6>
+        </div>
+      </div>
+      <!--grid 8-->
+      <div class="grid4">
+        <div class="grid4_img">
+          <img src="photo/coursera course img8.jpeg" alt="" />
+        </div>
+        <div class="grid4_cont">
+          <h5>physical science and Engineering</h5>
+          <h6>413 courses</h6>
+        </div>
+      </div>
+      <!--grid 9-->
+      <div class="grid4">
+        <div class="grid4_img">
+          <img src="photo/coursera course img9.jpeg" alt="" />
+        </div>
+        <div class="grid4_cont">
+          <h5>language and learning</h5>
+          <h6>150 courses</h6>
+        </div>
+      </div>
+      <!--grid 10-->
+      <div class="grid4">
+        <div class="grid4_img">
+          <img src="photo/coursera course img10.jpeg" alt="" />
+        </div>
+        <div class="grid4_cont">
+          <h5>infromation technology</h5>
+          <h6>145 courses</h6>
+        </div>
+      </div>
+      <!--grid 11-->
+      <div class="grid4">
+        <div class="grid4_img">
+          <img src="photo/coursera course img11.jpeg" alt="" />
+        </div>
+        <div class="grid4_cont">
+          <h5>math and logic</h5>
+          <h6>70 courses</h6>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!--page 11 start-->
+    <div class="learner_outcomes">
+      <div class="learner_img">
+        <img src="photo/learner oucomtes.png" alt="404">
+      </div>
+      <div class="learner_cont">
+        <h1>learner outcomes on coursera</h1>
+        <p><span class="learner_bold"> 77% of learners report career benefits,</span> such as new skills, increased pay, and new job . <span class="learning_anch"> <a href="##">Coursera Learner Outcomes Report</a></p></span>
+        <div class="button2 show_button button3">join for free</div>
+      </div>
+    </div>
+    <!--page 12 start-->
+    <div class="coursera_community margin_common">
+      <h1>From the Coursera community</h1>
+      <p>148+ million people have already joined Coursera</p>
+      <div class="community_grid">
+        <!--first grid-->
+        <div class="community1">
+        <div class="community_img">
+          <img src="photo/community1.png" alt="">
+          <div class="community_content">
+            <h3>Kenia R.</h3>
+            <p>United States</p>
+            <span class="underline"></span>
+          </div>
+          
+          <div class="community_botoom">
+            <p>“Being a mother — especially a working mother means I’m constantly trying to juggle my schedule, my kids’ schedules, and work. I am very grateful for the flexible and remote learning programs that Coursera has to offer.”</p>
+          </div>
+        </div>
+      </div>
+      <!--second grid start page start-->
+      <div class="community1">
+        <div class="community_img">
+          <img src="photo/community2.png" alt="">
+          <div class="community_content">
+            <h3>Ryan L.</h3>
+            <p>United States</p>
+            <span class="underline"></span>
+          </div>
+          <div class="community_botoom">
+            <p>“From taking courses on Coursera, I gained a deep understanding of the UX Design process from start to finish. With the knowledge I gained, I feel prepared for entry-level jobs and internships. I've been able to apply the skills and knowledge I gained to multiple projects and work experiences.”</p>
+          </div>
+        </div>
+      </div>
+      <!--third grid start page start-->
+      <div class="community1">
+        <div class="community_img">
+          <img src="photo/community3.png" alt="">
+          <div class="community_content">
+            <h3>vishal v.</h3>
+            <p>India</p>
+            <span class="underline"></span>
+          </div>
+          
+          <div class="community_botoom">
+            <p>“I really enjoyed my courses. The quizzes, videos, and quick labs provided helpful hands-on experience. Learning on Coursera has given me the confidence and ability to excel in my career. I love this feeling.” </p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- page 13 start-->
+     <div class="ideal">
+      <div class="ideal_grid">
+        <div class="ideal_cont">
+          <div class="pro_cert">
+            <h1>The ideal solution for your business</h1>
+          </div>
+          <p>Get the world-class learning and development chosen by top organizations across the globe. All on Coursera for Business.</p>
+          <div class="button2">discover coursera for business</div>
+          <div class="ideal_anc">
+            <p>Upskill a small team? <span><a href="##">Check out Coursera for Teams <i class="ri-share-box-line"></i></a></span></p>
+          </div>
+        </div>
+      </div>
+     </div>
+  </body>
+</html>
