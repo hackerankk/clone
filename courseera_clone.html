@@ -473,7 +473,78 @@
       font-size: 20px;
       color: var(--grid-content-color);
      }
-     
+     /*13 page start*/
+     .ideal{
+      background-color:#ecf5fba9;
+     }
+     .ideal_grid{
+      display: grid;
+      padding: 2rem 0;
+      grid-template-columns:repeat(2,1fr);
+     }
+     .ideal_cont{
+      width: 33rem;
+     }
+     .ideal_cont  p{
+      padding-top: 2rem;
+
+     }
+     .button_ideal{
+      width: 18rem;
+    height: 3rem;
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    border-radius: 2px;
+     }
+     .ideal_img{
+      display: grid;
+      grid-template-rows: repeat(3,1fr);
+      grid-template-columns: repeat(3,1fr);
+      gap: 3rem;
+      margin-top: 2rem;
+     }
+     .ideal_image{
+      text-align: center;
+     }
+     /*14 page start*/
+     .next_step{
+      display: flex;
+      gap: 5rem;
+     }
+     .next_cont{
+      width: 31rem;
+     }
+     .next_cont p{
+      margin-top: 3rem;
+      font-size: 17px;
+     }
+     /*footer start*/
+     .footer_anc{
+      display: flex;
+      flex-direction: column;
+      width: 17rem;
+      font-size: 0.875rem;
+      /*line-height: 30px;*/
+     }
+     .footer_anc a{
+      color: #4a4a4a;
+      margin-bottom: 10px;
+     }
+     .footer1{
+      display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(4,1fr);
+     }
+     .footer_grid{
+      padding: 0 1rem;
+     }
+     .footer_img{
+      display: grid;
+      justify-items: center;
+     }
     </style>
     <title>course era clone</title>
   </head>
@@ -1529,17 +1600,194 @@
     </div>
     <!-- page 13 start-->
      <div class="ideal">
-      <div class="ideal_grid">
+      <div class="ideal_grid margin_common">
         <div class="ideal_cont">
           <div class="pro_cert">
             <h1>The ideal solution for your business</h1>
           </div>
           <p>Get the world-class learning and development chosen by top organizations across the globe. All on Coursera for Business.</p>
-          <div class="button2">discover coursera for business</div>
+          <div class="button2 button_ideal">discover coursera for business</div>
           <div class="ideal_anc">
             <p>Upskill a small team? <span><a href="##">Check out Coursera for Teams <i class="ri-share-box-line"></i></a></span></p>
           </div>
         </div>
+        <div class="ideal_img">
+          <span class="ideal_image"><img src="photo/ideal1.png" alt=""></span>
+            <span class="ideal_image"><img src="photo/ideal2.png" alt=""></span>
+            <span class="ideal_image"><img src="photo/ideal3.png" alt=""></span>
+            <span class="ideal_image"><img src="photo/ideal4.png" alt=""></span>
+            <span class="ideal_image"><img src="photo/ideal5.png" alt=""></span>
+            <span class="ideal_image"><img src="photo/ideal6.png" alt=""></span>
+            <span class="ideal_image"><img src="photo/ideal7.png" alt=""></span>
+            <span class="ideal_image"><img src="photo/ideal8.png" alt=""></span>
+            <span class="ideal_image"><img src="photo/ideal9.png" alt=""></span>
+        </div>
+      </div>
+     </div>
+     <!-- page 13 start-->
+     <div class="next_step margin_common">
+      <div class="lady_image">
+        <img src="photo/lady.png" alt="">
+      </div>
+        <div class="next_cont">
+          <div class="pro_cert">
+            <h1>Take the next step toward your personal and professional goals with Coursera.</h1>
+           </div>
+           <p>Join now to receive personalized recommendations from the full Coursera catalog.</p>
+            <div class="button2 show_button button3">join for free</div>
+          
+        </div>
+      
+     </div>
+     <div class="footer">
+      <div class="footer1 margin_common">
+        <div class="footer_grid">
+          <div class="footer_head">
+            <h3>Get Started with AI</h3>
+          </div>
+          <div class="footer_anc">
+            <a href="">AWS & DLAI GenAI with LLMs Course</a>
+            <a href="">DLAI AI For Everyone Course</a>
+            <a href="">Google AI Essentials Course</a>
+            <a href="">DLAI Deep Learning Specialization</a>
+            <a href="">DLAI NLP Specialization</a>
+            <a href="">Google Cloud Introduction to Generative AI Course</a>
+            <a href="">IBM Generative AI Fundamentals Specialization</a>
+            <a href="">Stanford AI in Healthcare Specialization</a>
+            <a href="">Stanford Machine Learning Specialization</a>
+            <a href="">Vanderbilt Prompt Engineering for ChatGPT Course</a>
+          </div>
+        </div>
+        <!--grid 2-->
+        <div class="footer_grid">
+          <div class="footer_head">
+            <h3>Popular Career Certificates</h3>
+          </div>
+          <div class="footer_anc">
+            <a href="">Google Cybersecurity Professional Certificate   
+              </a>
+            <a href="">Google Data Analytics Professional Certificate
+            </a>
+            <a href="">Google Digital Marketing Professional Certificate</a>
+            <a href=""> Google Project Management Professional Certificate</a>
+            <a href="">Google UX Design Professional Certificate</a>
+            <a href="">IBM Data Analyst Professional Certificate</a>
+            <a href="">IBM Data Science Professional Certificate</a>
+            <a href="">Meta Front-End Developer Professional Certificate</a>
+            <a href="">Microsoft Power BI Data Analyst Professional Certificate</a>
+            <a href="">All Career Certificates</a>
+          </div>
+        </div>
+        <!--grid 3-->
+        <div class="footer_grid">
+          <div class="footer_head">
+            <h3>Popular Subjects</h3>
+          </div>
+          <div class="footer_anc">
+            <a href="">Artificial Intelligence </a>
+            <a href=""> Cybersecurity</a>
+            <a href="">Data Analytics</a>
+            <a href="">   Data Science</a>
+            <a href="">  Digital Marketing</a>
+            <a href="">Generative AI</a>
+            <a href="">Machine Learning</a>
+            <a href="">Microsoft Excel</a>
+            <a href="">Project Management</a>
+            <a href="">Python</a>
+            <a href=""> All Courses  </a>
+          </div>
+        </div>
+        <!--grid 4 start -->
+        <div class="footer_grid">
+          <div class="footer_head">
+            <h3>Popular Resources</h3>
+          </div>
+          <div class="footer_anc">
+            <a href="">How to Become a Data Analyst </a>
+            <a href=""> How to Get a PMP Certification</a>
+            <a href="">Popular Cybersecurity Certifications</a>
+            <a href=""> Popular Data Analytics Certifications</a>
+            <a href="">Popular IT Certifications</a>
+            <a href="">Popular Machine Learning Certifications</a>
+            <a href="">Popular SQL Certifications</a>
+            <a href="">GenAI for Software Developers</a>
+            <a href="">GenAI for Data Professionalst</a>
+            <a href="">Career Insights & Advice Hub</a>
+            <a href=""> All Courses  </a>
+          </div>
+        </div>
+        <!--grid 5 start-->
+        <div class="footer_grid">
+          <div class="footer_head">
+            <h3>coursera</h3>
+          </div>
+          <div class="footer_anc">
+            <a href="">About</a>
+            <a href=""> What We Offer</a>
+            <a href="">Leadership</a>
+            <a href="">Careers</a>
+            <a href="">Catalog</a>
+            <a href="">Coursera Plus</a>
+            <a href=""> Professional Certificates</a>
+            <a href="">MasterTrack® Certificates</a>
+            <a href="">Degrees</a>
+            <a href="">  For Enterprise</a>
+            <a href=""> For Government </a>
+            <a href="">For Campus</a>
+            <a href="">Become a Partner</a>
+            <a href="">Social Impact</a>
+            <a href="">Free Courses</a>
+            <a href=""> ECTS Credit Recommendations</a>
+          </div>
+        </div>
+        <!--grid 6 start-->
+        <div class="footer_grid">
+          <div class="footer_head">
+            <h3>community</h3>
+          </div>
+          <div class="footer_anc">
+            <a href="">Learners</a>
+            <a href=""> Partners</a>
+            <a href="">Beta Testers</a>
+            <a href="">Blog</a>
+            <a href="">The Coursera Podcast</a>
+            <a href="">Tech Blog</a>
+            <a href="">Teaching Center</a>
+          </div>
+        </div>
+        <!--grid 8 start-->
+        <div class="footer_grid">
+          <div class="footer_head">
+            <h3>More</h3>
+          </div>
+          <div class="footer_anc">
+            <a href="">Press </a>
+            <a href=""> Investors</a>
+            <a href="">Terms</a>
+            <a href="">Privacy</a>
+            <a href="">Help</a>
+            <a href="">Accessibility</a>
+            <a href="">Contact</a>
+            <a href="">Articles</a>
+            <a href="">Directory</a>
+            <a href=""> Affiliates</a>
+            <a href=""> Modern Slavery Statement</a>
+            <a href="">Manage Cookie Preferences</a>
+          </div>
+        </div>
+        <!--grid 9 start-->
+      <div class="footer_grid footer_img">
+        <div class="apple">
+          <img src="photo/app logo.png" alt="404">
+        </div>
+        <div class="playstore">
+          <img src="photo/google icon.png" alt="">
+        </div>
+        <div class="certified">
+          <img src="photo/certified.png" alt="">
+
+        </div>
+      </div>
       </div>
      </div>
   </body>
