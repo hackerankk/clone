@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+       .flex_center{
+        display: flex;
+        justify-content: center;
+       }
+        :root{
+            --primary-color:#9d4f02;
+            --nav-font-size:18px;
+
+        }
+        .nav1{
+            background-color: var(--primary-color);
+            display: flex;
+            justify-content: space-between;
+            padding: 17px 5.5rem;
+            padding-top: 1rem;
+            font-size: var(--nav-font-size);
+            align-items: center;
+
+        }
+        .nav1 a{
+            text-decoration: none;
+            color: white;
+        }
+        .logo{
+            display: inline-flex;
+    width: 11rem;
+    height: 44px;
+        }
+        .logo img{
+            width: 95%;
+        }
+        .navlogo{
+            height: 39px;
+   margin-right: 9px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+    border-radius: 5px;
+        }
+        .navright{
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+        /* menu baar started */
+        .menu{
+            display: flex;
+    justify-content: space-between;
+    padding: 0 13rem;
+    align-items: center;
+    font-size:var(--nav-font-size);
+        }
+        .menubar{
+            display: flex;
+            gap: 2rem;
+        }
+        .menubar img{
+            width: 68px;
+            margin-top: 1rem;
+        }
+        .menu a{
+            color: black;
+            text-transform: capitalize;
+        }
+        /* first animation start */
+        .first_animation{
+            
+    overflow: hidden;
+    position: relative;
+    /* width: 50rem; */
+    height: 34rem;
+    
+    /* left: 1rem; */
+    
+        }
+        .bus{
+            display: flex;
+            position: absolute;
+            animation: forwards;
+    animation-duration: 5s;
+    /* width: 30rem; */
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    /* animation-name: bus; */
+        }
+        
+        /* .first_animation img{
+            
+       width: 40rem;
+           
+        } */
+        @keyframes bus {
+            0%{
+                left: 0;
+            }
+            100%{
+                left: -100rem;
+            }
+          
+            
+        }
+        /* bus end booking start */
+        .booking{
+            display: flex;
+            transform: translate(0rem, -100px);
+            gap: 1rem;
+            margin:0 9rem;
+            height: 4rem;
+            /* border: 2px solid; */
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+        }
+        .common_booking{     
+    width: 12rem;
+    height: 2rem;
+    background-color:white;
+        }
+       .booking input{
+        font-size:29px;
+            width: 170px;
+            height: 100%;
+            border: none;
+            outline: none;
+        }
+       .date input{
+        font-size: 14px;
+       }
+        .booking button{
+            width: 100%;
+    height: 100%;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 24px;
+        }
+        .map{
+            font-size: 17px;
+        }
+        /* popllar envent start */
+
+        .Popular_card{
+            height: 25rem;
+        }
+        .popular_head{
+            display: flex;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: red;
+        }
+        .card_main{
+            display: flex;
+            overflow: hidden;
+    width: 68rem;
+    height: 21rem;
+    margin-left: 8rem;
+    position: relative;
+
+        }
+        .card_animation{
+            display: flex;
+           width: 68rem;
+           position: relative;
+           height: 40rem;
+            animation-name:cards;
+            animation-duration:10s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+        }
+        .card{
+            width: 17rem;
+            height: 20rem;
+        }
+
+        .card img{
+            width: 17rem;
+        }
+        .delhi_via{
+            display: flex;
+    width: 9rem;
+    font-size: 100%;
+    height: 36px;
+    text-transform: capitalize;
+    border: 2px solid ;
+    border-radius: 14px;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transform: translate(4rem, -6rem);
+        }
+        .delhi_via:hover{
+            background-color: white;
+            color: black;
+
+        }
+        /* .card{
+            
+        } */
+      @keyframes cards {
+        0%{
+            left: 0;
+        }
+        14.5%{
+            left: -17rem;
+        }
+        29%{
+            left:-34rem;
+        }
+         43.5%{
+            left: -51rem;
+        }
+        58%{
+            left: -68rem;
+        }
+       72.5%{
+        left: -85rem;
+        }
+        87%{
+            left: -102rem;
+        }
+        100%{
+            left:-119rem;
+        }
+      }   
+      /* ammenties start */
+      .amenties{
+        height: 36rem;
+        border: 2px solid var(--primary-color);
+        background-color: var(--primary-color);
+        display: fle;
+    flex-direction: column;
+    justify-items: center;
+}
+      
+      .amenties_head{
+        font-size: 2.5rem;
+        color: white;
+        margin: 2rem 0;
+
+      }
+      .amen_main{
+        display: grid;
+    grid-template-rows: repeat(3,8rem);
+    grid-template-columns: repeat(3,23rem);
+      }
+      .grid{
+      font-size: 18px;
+      font-weight: bold;
+    width: 20rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    color: red;
+    background-color: white;
+      }
+      .grid:hover{
+        background-color: #fac526;
+        color: black;
+      }
+      /* discount start */
+      .bg{
+            background-image: url(photo/offer.png);
+      }
+      /* features start */
+      .salient{
+        height: 21rem;
+        display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+      }
+      .salient h3{
+        font-size: 2rem;
+        margin: 2rem 0;
+      }
+      .feature_flex{
+        display: flex;
+        gap: 3rem;
+        margin: 0 6rem;
+      }
+      .feature_img{
+        border-left: 8px solid #48437f;
+    border-bottom-left-radius: 70px;
+    border-right: 4px solid #48437f;
+    width: 11rem;
+    border-top-right-radius: 70px;
+    height: 10rem;
+    padding: 18px;
+      }
+      .feature_flex p{
+        margin-top: 4rem;
+      }
+      .feature_img img{
+        width: 100%;
+      }
+      /* feature end gallary start */
+      .gallary{
+        display: flex;
+        gap: 10px;
+      }
+      .gallary_flex{
+        display: flex;
+    flex-direction: column;
+    gap: 10px;
+      }
+      .middle{
+        margin-top: 2rem;
+        align-items: center;
+      }
+      .gallary_text{
+        align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 26rem;
+    /* gap: 2rem; */
+    font-size: 22px;
+    margin: 3rem 0;
+      }
+      .gallary_text h1{
+        color:#e42826;
+    font-size: 3rem;
+    margin: 2rem 0;
+    text-transform: uppercase;
+      }
+      .gallary_img {
+        border: 3px solid #c3c3c3;
+      }
+      .gallary_img:hover{
+        transform: scaley(1.04);
+        transition: linear 1s;
+      }
+      /* namste start */
+      .namste{
+        height: 16rem;
+    /* width: 42rem; */
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #fab020;
+    align-items: center;
+      }
+      
+      .namste img{
+        width: 10%x;
+      }
+      .namste h2{
+        font-size: 4rem;
+      }
+      /* footer page */
+      .footer{
+        padding: 0 9rem;
+        background-color: var(--primary-color);
+        color: white;
+      }
+      .flex{
+        gap: 3rem;
+        padding-top: 5rem;
+        display: flex;
+      }
+      .flex h2{
+        text-transform: uppercase;
+      
+      }
+      .bor{
+        border-top: 2px solid;
+        width: 25px;
+        margin-bottom: 1rem;
+        margin-top: 6px;
+      }
+      .address{
+        align-items: baseline;
+      }
+      .contact{
+        width: 18rem;
+        font-size: 1rem;
+        line-height: 31px;
+      }
+      .flex_footer{
+        display: flex;
+        gap: 1rem;
+      } 
+      .links{
+        width: 43rem;
+      }
+      .links a{
+        color: white;
+      } 
+      .link a:hover{
+        transform: scaleX(.9);
+        transition: .4s;
+      }
+      .link{
+        display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 10px;
+      }
+      .social a{
+        width: 31px;
+    display: flex;
+    /* border: 2px solid; */
+    height: 2rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    background: white;
+    color: var(--primary-color);
+    text-decoration: none;
+      }
+      .social {
+        display: flex;
+        gap: 1rem;
+      }
+      .boder{
+        height: 1rem;
+        border-bottom: 2px solid;
+        margin: 2rem 0;
+      }
+        </style>
+</head>
+<body>
+    <div class="nav1">
+        <div class="nav1left">
+            <a href=""><i class="ri-mail-line"></i>  info@laxmiholidays.com<i class="ri-phone-line"></i>01144446900</a>
+        </div>
+        <div class="navright">
+            <a href="">Customer Login</a>
+            <a href="">Agent Login</a>
+            <span class="logo">
+           <span class="navlogo"> <a href=""><img src="photo/laxmi Holidays/google play log.png" alt=""></a></span>
+            <span class="navlogo"><a href=""><img src="photo/laxmi Holidays/app strore.png" alt=""></a>
+            </span></span>
+        </div>  
+    </div>
+    <!-- menu bar start -->
+    <div class="menu">
+        <div class="sign">
+            <img src="./photo/laxmi Holidays/logo.png" alt="">
+        </div>
+        <div class="menubar">
+            <a href="">home</a>
+            <a href="">mange booking</a>
+            <a href="">packages</a>
+            <a href="">gallery</a>
+            <a href="">contact</a>
+            <a href="">more</a>
+        </div>
+    </div>
+    <!-- animation start -->
+    <div class="first_animation">
+        <div class="bus">
+        <img src="photo/laxmi Holidays/bus 1.jpg" alt="">
+        <img src="photo/laxmi Holidays/bus2.jpg" alt="">
+    </div>
+    </div>
+    <!-- booking start -->
+    <div class="booking">
+        <div class="origin common_booking">
+            <i class="ri-map-pin-2-fill map"></i>
+            <input type="text" placeholder="placeholder">
+           
+
+        </div>
+        <div class="destination common_booking">
+            <i class="ri-map-pin-2-fill map"></i>
+            <input type="text" placeholder=" destination">
+            
+        </div>
+        <div class="date common_booking">
+            <input class="date"  type="date">
+            
+        </div>
+        <div class="date_text common_booking">
+            <i class="ri-calendar-event-fill"></i>
+            <input type="text" placeholder="return">
+           
+        </div>
+        <div class="button common_booking">
+            <button>search</button>
+        </div>
+    </div>
+    <div class="Popular_card">
+<div class="popular_head">
+    <h5>POPULAR ROUTES</h5>
+</div>
+    <div class="card_main">
+    <div class="card_animation">
+        <div class="card">
+            <img src="photo/laxmi Holidays/amrisir.png" alt="">
+            <span class="delhi_via">
+                delhi-amritsir
+            </span>
+        </div>
+        <div class="card">
+            <img src="photo/laxmi Holidays/chandigarh.png" alt="">
+            <span class="delhi_via">
+                delhi-Chandigarh
+            </span>
+        </div>
+        <div class="card">
+            <img src="photo/laxmi Holidays/dharamshala.png" alt="">
+            <span class="delhi_via">
+                delhi-Dharamsharala
+            </span>
+        </div>
+        <div class="card">
+            <img src="photo/laxmi Holidays/dehradun.png" alt="">
+            <span class="delhi_via">
+                delhi-Dehradun
+            </span>
+        </div>
+        <div class="card">
+            <img src="photo/laxmi Holidays/gorakhpur.png" alt="">
+            <span class="delhi_via">
+                delhi-Gorakhpur
+            </span>
+        </div>
+        <div class="card">
+            <img src="photo/laxmi Holidays/haridwar.png" alt="">
+            <span class="delhi_via">
+                delhi-haridwar
+            </span>
+        </div>
+        <div class="card">
+            <img src="photo/laxmi Holidays/katra.png" alt="">
+            <span class="delhi_via">
+                delhi-Katra
+            </span>
+        </div>
+        <div class="card">
+            <img src="photo/laxmi Holidays/lucknow.png" alt="">
+            <span class="delhi_via">
+                delhi-Lucknow
+            </span>
+        </div>
+        <div class="card">
+            <img src="photo/laxmi Holidays/ludhyina.png" alt="">
+            <span class="delhi_via">
+                delhi-Ludhiana
+            </span>
+        </div>
+        <div class="card">
+            <img src="photo/laxmi Holidays/manali.png" alt="">
+            <span class="delhi_via">
+                delhi-Manali
+            </span>
+        </div>
+        <div class="card">
+            <img src="photo/laxmi Holidays/varanashi.png" alt="">
+            <span class="delhi_via">
+                delhi-Varanasi
+            </span>
+        </div>
+    
+    </div>
+</div>
+    </div>
+    <div class="amenties">
+        <div class="amenties_head flex_center">
+        <h2>AMENITIES</h2>
+        </div>
+        <div class="amen_main">
+            <div class="grid">
+                <img src="photo/laxmi Holidays/charging-point.png" alt="">
+                <p> charging-point</p>
+            </div>
+            <div class="grid">
+                <img src="photo/laxmi Holidays/blanket.png" alt="">
+                <p> blanket</p>
+            </div>
+            <div class="grid">
+                <img src="photo/laxmi Holidays/emergency-Exit.png" alt="">
+                <p>emergency-Exit </p>
+            </div>
+            <div class="grid">
+                <img src="photo/laxmi Holidays/fire-extinguisher.png" alt="">
+                <p>fire-extinguisher</p>
+            </div>
+            <div class="grid">
+                <img src="photo/laxmi Holidays/launge.png" alt="">
+                <p>LAXMI HOLIDAYS LOUNGE </p>
+            </div>
+            <div class="grid">
+                <img src="photo/laxmi Holidays/pillow.png" alt="">
+                <p> pillow</p>
+            </div>
+            <div class="grid">
+                <img src="photo/laxmi Holidays/24-x-7.png" alt="">
+                <p>24/7 Customer support </p>
+            </div>
+            <div class="grid">
+                <img src="photo/laxmi Holidays/water-bottle.png" alt="">
+                <p> water bottle</p>
+            </div>
+            <div class="grid">
+                <img src="photo/laxmi Holidays/live-tracking.png" alt="">
+                <p>live tracking </p>
+            </div>  
+
+        </div>
+    </div>
+    <!-- discount bus start -->
+     <div class="bg">
+        <marquee behavior="left" direction="left">
+        <img src="photo/laxmi Holidays/discount-bus-03.png" alt="">
+        </marquee>
+     </div>
+     <!-- features -->
+      <div class="features">
+        <div class="salient">
+            <h3>Salient Features</h3>
+            <div class="feature_flex">
+                <div class="feature_img">
+                    <img src="photo/laxmi Holidays/bus-driver.png" alt="">
+                    <p>Professional driver</p>
+                </div>
+                <div class="feature_img">
+                    <img src="photo/laxmi Holidays/customer_support.png" alt="">
+                    <p>customer_support</p>
+                </div>
+                <div class="feature_img">
+                    <img src="photo/laxmi Holidays/online_cancellation.png" alt="">
+                    <p>cancellation on net</p>
+                </div>
+                <div class="feature_img">
+                    <img src="photo/laxmi Holidays/online-payment.png" alt="">
+                    <p>online payment</p>
+                </div>
+                <div class="feature_img">
+                    <img src="photo/laxmi Holidays/secure_safe.png" alt="">
+                    <p>secure safe</p>
+                </div>
+                <div class="feature_img">
+                    <img src="photo/laxmi Holidays/ticket_booking.png" alt="">
+                    <p>ticket booking</p>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- gallery start -->
+      <div class="gallary">
+        <div class="left gallary_flex">
+            <span class="gallary_img">
+                <img src="photo/laxmi Holidays/gallery-01.png" alt="">
+            </span>
+            <span class="gallary_img">
+                <img src="photo/laxmi Holidays/gallery-02.png" alt="">
+            </span>
+            <span class="gallary_img">
+                <img src="photo/laxmi Holidays/gallery-03.png" alt="">
+            </span>
+        </div>
+        <div class="middle gallary_flex">
+            <div class="gallary_text">
+                <h1>our gallary</h1>
+                <p>Are you looking out for luxurious buses? Just check out images of our huge fleet of comfortable buses at the most reasonable rates.</p>
+            </div>
+                <span class="middle_img gallary_img">
+                    <img src="photo/laxmi Holidays/gallery-05.png"alt="">
+                </span>
+            
+        </div>
+        <div class="right gallary_flex">
+            <span class="gallary_img">
+                <img src="photo/laxmi Holidays/gallery-04.png" alt="">
+            </span>
+            <span class="gallary_img">
+                <img src="photo/laxmi Holidays/gallery-06.png" alt="">
+            </span>
+            <span class="gallary_img">
+                <img src="photo/laxmi Holidays/gallery-07.png" alt="">
+            </span>
+        </div>
+      </div>
+      <!-- gallery end  namste start-->
+       <div class="namste">
+
+            <img src="photo/laxmi Holidays/hand.png" alt="">
+            <p>Laxmi Holidays Thanking to all our Valuable Customers!</p>
+            <h2>whish you happy and comfortable journey</h2>
+       </div>
+       <div class="footer">
+        <div class="flex">
+        <div class="contact">
+            <h2>contact</h2>
+            <div class="bor"></div>
+            <div class="address flex_footer">
+                <i class="ri-map-pin-2-fill"></i>
+                <span class="address">
+                    <h3>Laxmi Holidays</h3  >
+                    <p>Sangam Vihar road. Jagatpur Extension Wazirabad ,
+                        Jagatpur Extension Wazirabad,</p>
+                        <p>Delhi,</p>
+                        <p> 
+                        Delhi -110054</p>
+                </span>
+            </div>
+            <div class="number flex_footer">
+                <i class="ri-phone-fill"></i>
+                <p>01144446900</p>
+            </div>
+            <div class="email flex_footer">
+                <i class="ri-mail-line"></i>
+                <p>info@laxmiholidays.com</p>
+            </div>
+        </div>
+        <div class="links">
+            <div class="quick">
+                <h2>quick links</h2>
+                <div class="bor"></div>
+            </div>
+            <div class="link">
+            <a href="">
+                <i class="ri-arrow-right-double-line"></i>
+                careers
+            </a>
+            <a href="">
+                <i class="ri-arrow-right-double-line"></i>
+                contact
+            </a>
+            <a href="">
+                <i class="ri-arrow-right-double-line"></i>
+                Testimonials
+            </a>
+            <a href="">
+                <i class="ri-arrow-right-double-line"></i>
+                feedback
+            </a>
+            <a href="">
+                <i class="ri-arrow-right-double-line"></i>
+                schedules
+            </a>
+            <a href="">
+                <i class="ri-arrow-right-double-line"></i>
+                privacy policy
+            </a>
+            <a href="">
+                <i class="ri-arrow-right-double-line"></i>
+                terms & condition
+            </a>
+            <a href="">
+                <i class="ri-arrow-right-double-line"></i>
+                refund status
+            </a>
+            <a href="">
+                <i class="ri-arrow-right-double-line"></i>
+                download app
+            </a>
+            <a href="">
+                <i class="ri-arrow-right-double-line"></i>
+                sitemap
+            </a>
+            <a href="">
+                <i class="ri-arrow-right-double-line"></i>
+                agent login
+            </a>
+            <a href="">
+                <i class="ri-arrow-right-double-line"></i>
+                agent registration
+            </a>
+            <a href="">
+                <i class="ri-arrow-right-double-line"></i>
+                FAQS
+            </a>
+            <a href="">
+                <i class="ri-arrow-right-double-line"></i>
+                confirm phone booking
+            </a>
+
+            </div>
+        </div>
+        <div class="follow">
+            <h2>Follow Us</h2>
+            <div class="bor"></div>
+            <div class="social">
+            <a href=""><i class="ri-facebook-box-fill"></i></a>
+            <a href=""><i class="ri-twitter-x-line"></i></a>
+            <a href=""><i class="ri-instagram-fill"></i></a>
+            <a href=""><i class="ri-linkedin-fill"></i></a>
+            </div>    
+        </div>
+        </div>
+        <div class="boder"></div>
+        <div class="copyright flex_center">
+            <p>© 2024 All rights reserved. Laxmi Holidays</p>
+        </div>
+       </div>
+       
+</body>
+</html>
